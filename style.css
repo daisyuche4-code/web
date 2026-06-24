@@ -1,0 +1,180 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+}
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#111;
+    padding:20px 50px;
+}
+
+.logo{
+    color:#fff;
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+}
+
+nav ul li{
+    margin-left:20px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+}
+
+.hero{
+    height:90vh;
+    background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+    url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=1200');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.hero h1{
+    font-size:60px;
+}
+
+.hero p{
+    margin:20px 0;
+    font-size:22px;
+}
+
+.btn{
+    background:#e82127;
+    color:white;
+    padding:12px 25px;
+    text-decoration:none;
+    border-radius:5px;
+}
+
+.cars{
+    padding:60px 30px;
+}
+
+.cars h2{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:40px;
+}
+
+.car-container{
+    display:flex;
+    flex-wrap:wrap;
+    gap:25px;
+    justify-content:center;
+}
+
+.car-card{
+    background:white;
+    width:320px;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.car-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.car-card h3{
+    padding:15px;
+}
+
+.car-card p{
+    padding:0 15px;
+}
+
+.car-card span{
+    display:block;
+    padding:15px;
+    font-size:22px;
+    font-weight:bold;
+    color:#e82127;
+}
+
+.car-card button{
+    width:100%;
+    padding:15px;
+    border:none;
+    background:#111;
+    color:white;
+    cursor:pointer;
+}
+
+.contact{
+    padding:60px 20px;
+    background:#fff;
+}
+
+.contact h2{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+form{
+    max-width:600px;
+    margin:auto;
+}
+
+input, textarea{
+    width:100%;
+    padding:15px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+}
+
+textarea{
+    height:120px;
+}
+
+form button{
+    width:100%;
+    padding:15px;
+    background:#e82127;
+    color:white;
+    border:none;
+}
+
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+@media(max-width:768px){
+    header{
+        flex-direction:column;
+    }
+
+    .hero h1{
+        font-size:40px;
+    }
+
+    .car-container{
+        flex-direction:column;
+        align-items:center;
+    }
+}
